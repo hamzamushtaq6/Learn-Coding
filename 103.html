@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+    <div class="media-section">
+    <img src="Logo.jpg" alt="Company Logo" width="100">
+    </div>
+    
+    <!-- Introductory Video -->
+    <p>Watch this short video about our company and the job roles we offer.</p>
+    <div class="media-section">
+        <video width="520" height="240" controls>
+            <source src="ADVT.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select,
+        input[type="radio"] {
+            margin: 5px 0;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Job Application Form</h2>
+    <form action="/submit" method="post">
+        
+        <!-- Dropdown Input for Job Role -->
+        <div class="form-section">
+            <label for="job-role">Select Job Role:</label>
+            <select name="job-role" id="job-role">
+                <option value="">--Choose a Role--</option>
+                <option value="software-developer">Software Developer</option>
+                <option value="product-manager">Product Manager</option>
+                <option value="data-scientist">Data Scientist</option>
+                <option value="ux-designer">UX Designer</option>
+                <option value="marketing-manager">Marketing Manager</option>
+            </select>
+        </div>
+
+<!-- Radio Buttons for Experience Level -->
+<div class="form-section">
+    <label>Experience Level:</label><br>
+    <input type="radio" id="fresher" name="experience" value="Fresher">
+    <label for="fresher">Fresher</label><br>
+
+    <input type="radio" id="junior" name="experience" value="Junior">
+    <label for="junior">Junior</label><br>
+
+    <input type="radio" id="mid" name="experience" value="Mid-Level">
+    <label for="mid">Mid-Level</label><br>
+
+    <input type="radio" id="senior" name="experience" value="Senior">
+    <label for="senior">Senior</label><br>
+
+    <input type="radio" id="lead" name="experience" value="Lead">
+    <label for="lead">Lead</label><br>
+
+    <input type="radio" id="manager" name="experience" value="Manager">
+    <label for="manager">Manager</label><br>
+</div>
+
+        <!-- Submit Button -->
+        <div class="form-section">
+            <input type="submit" value="Apply">
+        </div>
+    </form>
+<!-- Downloadable Resource (e.g., CV or Brochure) -->
+<p>Candidates who have applied already</p>
+<table border="1" cellpadding="10">
+    <tr>
+        <th colspan="2">Personal Information</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Name</td>
+        <td>Hamza</td>
+    </tr>
+    <tr>
+        <td>Mushtaq</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Email</td>
+        <td>hamza@example.com</td>
+    </tr>
+    <tr>
+        <td>mushtaq@example.in</td>
+    </tr>
+    <tr>
+        <th colspan="2">Job Information</th>
+    </tr>
+    <tr>
+        <td>Role</td>
+        <td>Software Developer</td>
+    </tr>
+</table>
+
+
+<p>Candidates who have applied already</p>
+<table border="1" cellpadding="10">
+    <tr>
+        <th colspan="2">Personal Information</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Name</td>
+        <td>Arif</td>
+    </tr>
+    <tr>
+        <td>Adil</td>
+    </tr>
+
+    <tr>
+        <td>Salman</td>
+    </tr>
+
+    <tr>
+        <td rowspan="3">Email</td>
+        <td>Arif@example.com</td>
+    </tr>
+    <tr>
+        <td>Adil@example.in</td>
+    </tr>
+    <tr>
+        <td>salman@example.in</td>
+    </tr>
+    <tr>
+        <th colspan="2">Job Information</th>
+    </tr>
+    <tr>
+        <td>Role</td>
+        <td>Product Manager</td>
+    </tr>
+</table>
+
+
+
+
+
+
+    <div class="media-section">
+        <p>Free Motivation Here!</p>
+        <audio controls>
+            <source src="videoplayback.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+
+<!-- Toggle Button -->
+<div class="form-section">
+    <label for="toggle">Receive Job Updates:</label>
+    <input type="checkbox" id="toggle" name="job-updates">
+</div>
+
+
+
+<!-- Hyperlink -->
+<div class="form-section">
+    <a href="https://www.linkedin.com/in/hamzamushtaq/" target="_blank">Visit My Linkedin</a>
+</div>
+
+<div class="form-section">
+    <a href="FinalHamza[CV].pdf" download>Download My CV</a>
+</div>
+
+
+</body>
+
+</html>
