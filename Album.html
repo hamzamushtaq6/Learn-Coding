@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBUM
+
+    </title>
+    <!--
+     *Allows to divide the space more effeciently
+     *Intersection of vertical and horizontal lines
+     *2 DImensions layout system that allows to create rows and columns(Unlike FLex)
+      
+     Element, Row, COlumn, Gap, Line
+     Similar to Parent Child, grid needs a
+     Grid Container and Grid Items(Inside the container) -->
+
+    <style>
+
+        .album-box {
+            width: 200px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid black;
+            background-color: lightblue;
+            margin:auto;
+            font-size: 24px;
+            font-weight: bold;
+            
+        }
+        .album-box:hover{
+            transform: scale(24px);
+            background-color: black;
+        }
+
+        body {
+            display: grid;
+
+            align-items: center;
+            margin: 0;
+            background: linear-gradient(to right, #00ff26, #ff0000);
+            /* Gradient background */
+            height: 100vh;
+            color: white;}
+            
+
+
+        .container {
+            /* Make a 3x3 matrix */
+            height: 1300px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background:linear-gradient(to top, darkblue,white);
+
+            /* grid-template-columns: minmax(100px,1fr) minmax(100px,1fr) ; */
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            /* column-gap: 10px;
+            row-gap: 2px; */
+            /* justify-items: center; */
+        }
+
+        .box {
+            /* height: 100px; */
+            /* width: 100px; */
+            overflow: hidden;
+        }
+
+        .image {
+    width: 420px; /* Set width of the image */
+    height: 390px; /* Set height of the image */
+    display: inline-block;
+    margin: auto; /* Centers the image */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Define transition properties */
+}
+
+
+        .image:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+    opacity: 0.8;          /* Change opacity on hover */
+}
+
+        .box1 {
+            /* background-color: red; */
+            border: 5px solid black;
+
+
+        }
+
+        .box2 {
+            /* background-color: maroon; */
+            border: 5px solid black;
+        }
+
+        .box3 {
+            /* background-color: black; */
+            border: 5px solid black;
+            /* justify-self: end; */
+        }
+
+        .box4 {
+            /* background-color: orange; */
+            border: 5px solid black;
+        }
+
+        .box5 {
+            /* background-color: yellow; */
+            border: 5px solid black;
+        }
+
+        .box6 {
+            /* background-color: indigo; */
+            border: 5px solid black;
+            /* justify-self: start; */
+        }
+
+        .box7 {
+            /* background-color: violet; */
+            border: 5px solid black;
+        }
+
+        .box8 {
+            /* background-color: green; */
+            border: 5px solid black;
+
+        }
+
+        .box9 {
+            /* background-color: blue; */
+            border: 5px solid black;
+            /* justify-self: self-end; */
+        }
+
+.image{
+    width: 420px;
+    height: 410px;
+    display: inline-block;
+    margin: auto;
+    transition: transform 0.3s ease-in, opacity 0.5s ease-out;
+}
+
+
+.image:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="album-box">
+        Album
+    </div>
+
+    <!-- Row and Column -->
+    <div class="container">
+        <div class="box box1">
+            <img src="kuti.jpeg" alt="" class="image">
+        </div>
+        <div class="box box2">
+            <img src="Gang.jpg" alt="" class="image">
+        </div>
+        <div class="box box3">
+            <img src="no2.jpeg" alt="" class="image">
+        </div>
+        <div class="box box4"><img src="download (1).jpeg" alt="" class="image"></div>
+        <div class="box box5"><img src="download (2).jpeg" alt="" class="image"></div>
+        <div class="box box6"><img src="download.jpeg" alt="" class="image"></div>
+        <div class="box box7"><img src="images (1).jpeg" alt="" class="image"></div>
+        <div class="box box8"><img src="images.jpeg" alt="" class="image"></div>
+        <div class="box box9"><img src="images (2).jpeg" alt="" class="image"></div>
+    </div>
+
+
+
+</body>
+
+</html>
